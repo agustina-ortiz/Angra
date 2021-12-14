@@ -4,10 +4,29 @@
 }
 
 /* background image */
-body {
+.body-index {
     background: url(./images/angra.jpg);
     height: 100vh;
     width: 100vh;
     background-size: cover;
 }
 
+/* animaciones */
+
+@keyframes mi-efecto {
+    0% { 
+        width: 0%;
+    }
+    100% { 
+        width: 100%;
+    }
+}
+
+.titulo {
+    background-color: rgba(233, 228, 180, 0.966);
+    width: 100%;
+    animation-name: mi-efecto;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-iteration-count: initial;
+}
