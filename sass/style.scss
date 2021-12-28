@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$textos: 50px;
+
+.body-index {
+    background: url(.//images/portada2.jpg);
+    height: 100vh;
+    width: 100vh;
+    background-size: cover;
+}
+  
+.navbar {
+    width: 100%;
+}
+  
+.tituloprincipal {
+    margin-top: 70px;
+    font-size: 120px;
+}
+  
+.presentacion {
+    font-size: 20px;
+}
+
+.aromatizante {
+
+    &__titulo {
+        color: darkgray;
+    }
+    &__imagen {
+        align-content: center;
+    }
+    &__lista {
+        ul li {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    margin-bottom: 0vh;
+    background: cornsilk;
+}
