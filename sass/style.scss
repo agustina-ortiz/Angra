@@ -3,45 +3,88 @@
     padding: 0;
 }
 
-$textos: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* grid area */
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "h1 h1"
+    "main main"
+    "footer footer";
+    grid-template-rows: 10% 45% 35% 10%;
+    grid-template-columns: 50% 50%;
+}
+
+header {
+    grid-area: header;
+}
+
+.tituloprincipal {
+    grid-area: h1;
+    font-size: 120px;
+    padding: 50px;
+    text-align: center;
+}
+
+.presentacion {
+    grid-area: main;
+}
+
+.pie {
+    grid-area: footer;
+    margin-bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+/* fin grid area */
 
 .body-index {
-    background: url(.//images/portada2.jpg);
+    background-image: url(../images/portada2.jpg);
     height: 100vh;
     width: 100vh;
     background-size: cover;
 }
-  
+
 .navbar {
-    width: 100%;
+    width: 100vh;
 }
-  
+
+/* mapas */
+
+$colores: (
+    principal: #d2b48c,
+    base: #d7b38e,
+    fondo: #fbf1e9,
+);
+
+.pie {
+    background: map-get($colores, fondo);
+}
+
+/* extend */
+
+.titulo {
+    padding: 40px;
+    text-align: center;
+}
+
 .tituloprincipal {
-    margin-top: 70px;
-    font-size: 120px;
+    @extend .titulo;
+    font-family: "lato";
 }
-  
-.presentacion {
+
+/* mixins */
+
+@mixin main {
     font-size: 20px;
+    text-align: center;
+}
+.presentacion {
+    @include main;
+    padding: 30px;
 }
 
-.aromatizante {
-
-    &__titulo {
-        color: darkgray;
-    }
-    &__imagen {
-        align-content: center;
-    }
-    &__lista {
-        ul li {
-            margin-bottom: 40px;
-        }
-    }
-}
-
-footer {
-    width: 100%;
-    margin-bottom: 0vh;
-    background: cornsilk;
-}
