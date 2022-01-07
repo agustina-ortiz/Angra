@@ -12,30 +12,28 @@
 </head>
 <body>
     
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
+ <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
               
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./velas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Velas
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./velas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Velas</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#"> Línea Málaga</a></li>
                   <li><a class="dropdown-item" href="#"> Línea Bari</a></li>
                   <li><a class="dropdown-item" href="#"> Línea Lisboa</a></li>
                   <li><a class="dropdown-item" href="#"> Ediciones especiales</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#"> Beneficios</a></li>
-                </ul>
+              </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./aromatizantes.html">Aromatizantes</a>
@@ -47,60 +45,120 @@
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
-          </div>
         </div>
-    </nav>
+   </div>
+  </nav>
 
 
-    <div class="titulo">
+  <div class="titulo">
       <h1 class="text-center" style="margin: 40px;">Velas</h1>
+  </div>
+  <div class="container-fluid" style="padding: 0px 40px;">
+      <p class="text-center">Nuestras velas están hechas con cera de soja, un derivado vegetal a diferencia de la parafina que deriva del petróleo. Por eso son 100% naturales y ecológicas.
+     Su temperatura de fusión es muy baja, esto hace que no necesite tanto calor para fundirse. Por eso al agregarle esencia libera aroma sin necesidad de encenderse. Su duración es hasta tres veces más que las de parafina.
+     La llama de la vela no ensucia ni mancha las paredes o muebles. Es fácil de limpiar ya que es soluble al agua.
+     Por todo esto son naturales, respetuosas con el medio ambiente y huelen riquísimo.</p>
+  </div>
+
+  
+    <!-- carrusel de fotos -->
+   
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin: 60px 230px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/carrusel1.jpg" class="d-block w-100" alt="velas">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/carrusel2.jpg" class="d-block w-100" alt="velas">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/carrusel3.jpg" class="d-block w-100" alt="velas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <h3 class="subtitulo">Velas de cera de soja</h3>
-    <p class="text__velas">La cera de soja es un derivado vegetal a diferencia de la parafina que deriva del petróleo. Por eso son 100% naturales y ecológicas.
-    Su temperatura de fusión es muy baja, esto hace que no necesite tanto calor para fundirse. Por eso al agregarle esencia libera aroma sin necesidad de encenderse. Su duración es hasta tres veces más que las de parafina.
-    La llama de la vela no ensucia ni mancha las paredes o muebles. Es fácil de limpiar ya que es soluble al agua.
-    Por todo esto son naturales, respetuosas con el medio ambiente y huelen riquísimo.</p>
-   
+    <!--  Fotos de productos -->
 
-    <h3>Líneas</h3>
+    <h3 class="text-center" style="padding: 20px 0px;">Líneas</h3>
 
-    <ul>
-        <li>Málaga</li>
-        <li>Bari</li>
-        <li>Lisboa</li>
-        <li>Ediciones especiales</li>
-    </ul>
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../images/velaMalaga.jpg" class="card-img-top" alt="Vela Málaga">
+            <div class="card-body">
+              <p class="card-text">Línea Málaga</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../images/velaBali.jpg" class="card-img-top" alt="Vela Bali">
+            <div class="card-body">
+              <p class="card-text">Línea Bali</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../images/velaLisboa.jpg" class="card-img-top" alt="Vela Lisboa">
+            <div class="card-body">
+              <p class="card-text">Línea Lisboa</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../images/velaEE.jpg" class="card-img-top" alt="Ediciones especiales">
+            <div class="card-body">
+              <p class="card-text">Ediciones especiales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 
-   
-   
-  <h3>Aromas</h3>
-        <ul>
-            <li>Vainilla</li>
-            <li>Citron & framboise</li>
-            <li>Magnolia</li>
-            <li>Orange blossom</li>
-            <li>Jazmín</li>
-            <li>Uva</li>
-            <li>Rosas</li>
-            <li>Flores blancas</li>
+  <!-- Aromas y beneficios -->
+
+  <div class="row justify-content-around" style="padding: 30px;">
+    <div class="col-4">
+      <h3 class="text-center" style="padding-top: 10px;">Aromas</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Vainilla</li>
+          <li class="list-group-item">Citron & framboise</li>
+          <li class="list-group-item">Magnolia</li>
+          <li class="list-group-item">Orange blossom</li>
+          <li class="list-group-item">Jazmín</li>
+          <li class="list-group-item">Uva</li>
+          <li class="list-group-item">Rosas</li>
+          <li class="list-group-item">Flores blancas</li>
         </ul>
-              
+    </div>
+    <div class="col-4">
+      <h3 class="text-center" style="padding-top: 10px;">Beneficios</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Relaja la mente</li>
+        <li class="list-group-item">Amplia la percepción</li>
+        <li class="list-group-item">Permite la concentración</li>
+        <li class="list-group-item">Limpia el ambiente</li>
+        <li class="list-group-item">Genera preotección</li>
+        <li class="list-group-item">Crea una atmósfera especial</li>
+      </ul> 
+    </div>
+  </div>
   
- <div>
- <h3>Beneficios</h3>
-  <ul>
-    <li>Relaja la mente</li>
-    <li>Amplia la percepción</li>
-    <li>Permite la concentración</li>
-    <li>Limpia el ambiente</li>
-    <li>Genera preotección</li>
-    <li>Crea una atmósfera especial</li>
-  </ul>      
- </div>
         
-   <footer class="pie">Seguíme en Instagram: @angra.cp</footer>
+  <footer class="pie">Seguíme en Instagram: @angra.cp</footer>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
