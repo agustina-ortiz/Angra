@@ -54,8 +54,6 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
-  margin-bottom: 0%;
-  width: 100%;
   text-align: center;
 }
 
@@ -71,9 +69,9 @@ header {
   width: 100vh;
 }
 
-/* mapas */
-.pie {
-  background: white;
+.pie__2 {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 /* extend */
@@ -91,5 +89,57 @@ header {
   font-size: 18px;
   text-align: center;
   padding: 30px;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .body-index {
+    background: url(../images/portadamedia.jpg);
+    width: 100vw;
+  }
+  .navbar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+    width: 100vw;
+  }
+  .tituloprincipal {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h1;
+    width: 100vw;
+    font-size: 90px;
+  }
+  .homesubtitulo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: div;
+    width: 100vw;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .presentacion {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    width: 100vw;
+    margin-top: 0px;
+    margin-top: 0px;
+  }
+  .pie {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    width: 100vw;
+    background-color: cornsilk;
+    margin-bottom: 0%;
+    margin-top: 90px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

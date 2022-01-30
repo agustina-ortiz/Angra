@@ -43,6 +43,7 @@ header {
 
 .pie {
     grid-area: footer;
+    text-align: center;
 }
 
 /* fin grid area */
@@ -58,20 +59,8 @@ header {
     width: 100vh;
 }
 
-.pie__secundario {
-    background: black;
-}
-
-/* mapas */
-
-$colores: (
-    principal: #d2b48c,
-    base: #d7b38e,
-    fondo: white,
-);
-
-.pie {
-    background: map-get($colores, fondo);
+.pie__2 {
+    align-content: center;
 }
 
 /* extend */
@@ -97,3 +86,48 @@ $colores: (
     padding: 30px;
 }
 
+/* media queries */
+
+@media screen and (max-width: 768px) {
+
+
+    .body-index {
+        background: url(../images/portadamedia.jpg);
+        width: 100vw;
+    }
+
+    .navbar {
+        grid-area: header;
+        width: 100vw;
+    }
+
+    .tituloprincipal {
+        grid-area: h1;
+        width: 100vw;
+        font-size: 90px;
+    }
+
+    .homesubtitulo {
+        grid-area: div;
+        width: 100vw;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .presentacion {
+        grid-area: main;
+        width: 100vw;
+        margin-top: 0px;
+        margin-top: 0px;
+    }
+
+    .pie {
+        grid-area: footer;
+        width: 100vw;
+        background-color: rgb(255, 248, 220);
+        margin-bottom: 0%;
+        margin-top: 90px;
+    
+    }
+}
