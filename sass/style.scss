@@ -12,10 +12,11 @@
     grid-template-areas: 
     "header header"
     "h1 h1"
+    "div div"
     "main main"
     "footer footer";
-    grid-template-rows: 10% 45% 35% 10%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 35% 20% 25% 10%;
+    grid-template-columns: 100%;
 }
 
 header {
@@ -29,21 +30,25 @@ header {
     text-align: center;
 }
 
+.homesubtitulo {
+    grid-area: div;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 .presentacion {
     grid-area: main;
 }
 
 .pie {
     grid-area: footer;
-    margin-bottom: 0%;
-    width: 100%;
-    text-align: center;
 }
 
 /* fin grid area */
 
 .body-index {
-    background-image: url(../images/portada2.jpg);
+    background-image: url(../images/portada3.1.jpg);
     height: 100vh;
     width: 100vh;
     background-size: cover;
@@ -53,12 +58,16 @@ header {
     width: 100vh;
 }
 
+.pie__secundario {
+    background: black;
+}
+
 /* mapas */
 
 $colores: (
     principal: #d2b48c,
     base: #d7b38e,
-    fondo: #fbf1e9,
+    fondo: white,
 );
 
 .pie {
@@ -80,7 +89,7 @@ $colores: (
 /* mixins */
 
 @mixin main {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 .presentacion {

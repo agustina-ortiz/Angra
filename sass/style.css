@@ -8,11 +8,11 @@
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header" "h1 h1" "main main" "footer footer";
-  -ms-grid-rows: 10% 45% 35% 10%;
-      grid-template-rows: 10% 45% 35% 10%;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+      grid-template-areas: "header header" "h1 h1" "div div" "main main" "footer footer";
+  -ms-grid-rows: 10% 35% 20% 25% 10%;
+      grid-template-rows: 10% 35% 20% 25% 10%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 header {
@@ -32,15 +32,25 @@ header {
   text-align: center;
 }
 
-.presentacion {
+.homesubtitulo {
   -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: div;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.presentacion {
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
 }
 
 .pie {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
@@ -51,7 +61,7 @@ header {
 
 /* fin grid area */
 .body-index {
-  background-image: url(../images/portada2.jpg);
+  background-image: url(../images/portada3.1.jpg);
   height: 100vh;
   width: 100vh;
   background-size: cover;
@@ -63,7 +73,7 @@ header {
 
 /* mapas */
 .pie {
-  background: #fbf1e9;
+  background: white;
 }
 
 /* extend */
@@ -78,7 +88,7 @@ header {
 
 /* mixins */
 .presentacion {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding: 30px;
 }
