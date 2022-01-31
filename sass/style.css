@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
+  text-decoration: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -66,17 +68,119 @@ header {
 }
 
 .navbar {
-  width: 100vh;
+  width: 100vw;
 }
 
 .pie__2 {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  background: #eeeab6;
+  text-align: center;
+}
+
+.velas__definicion {
+  width: 80%;
+}
+
+#velas__lineas {
+  padding: 0px;
+}
+
+#velas__lineas .col {
+  padding: 0px;
+  margin: 0px;
+}
+
+#velas__lineas .card {
+  text-align: center;
+  margin: 0px 60px;
+}
+
+.velas__info {
+  margin: 0px;
+}
+
+.velas__info li {
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.difusores__aromas {
+  margin-bottom: 30px;
+}
+
+.difusores__aromas ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.difusores__aromas .col {
+  text-align: center;
+}
+
+.difusor__img {
+  height: 380px;
+  width: 300px;
+}
+
+.difusor__grupo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row nowrap;
+          flex: row nowrap;
+}
+
+.difusores__aromas2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.difusores__aromas2 img {
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 25rem;
+  border-radius: 10px;
+  border: white solid 2px;
+}
+
+.difusores__aromas2 .difusores__ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.difusores__aromas2 .difusores__ul ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 /* extend */
 .titulo, .tituloprincipal {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -140,6 +244,37 @@ header {
     background-color: cornsilk;
     margin-bottom: 0%;
     margin-top: 90px;
+  }
+  .difusores__aromas2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 25px;
+    margin: 20px;
+  }
+  .difusores__aromas2 img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 17rem;
+    border-radius: 10px;
+    border: white solid 2px;
+  }
+  .difusores__aromas2 .difusores__ul {
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .difusores__aromas2 .difusores__ul ul {
+    padding: 0px;
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
