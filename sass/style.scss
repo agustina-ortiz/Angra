@@ -57,12 +57,16 @@ header {
     background-size: cover;
 }
 
+.body2 {
+    background-color: #f5f5dc;
+}
+
 .navbar {
     width: 100vw;
 }
 
 .pie__2 {
-    background: rgb(238, 234, 182);
+    background: #e5d8c8;
     text-align: center;
 }
 
@@ -72,13 +76,26 @@ header {
 
 #velas__lineas {
     padding: 0px;
-    .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    .row {
         padding: 0px;
         margin: 0px;
     }
+    .col {
+        padding: 0px;
+        margin: 0px;
+        align-content: center;
+    }
     .card {
         text-align: center;
-        margin: 0px 60px;
+        margin: 0px 10px;
+        & img {
+            margin: 0px;
+        }
+
     }
 }
 
@@ -169,6 +186,9 @@ header {
 
 @media screen and (max-width: 768px) {
 
+    .body2 {
+        background-color: #f1e2c5;
+    }
 
     .body-index {
         background: url(../images/portadamedia.jpg);
@@ -209,6 +229,31 @@ header {
         margin-top: 90px;
     }
 
+    #velas__lineas {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        
+        .row {
+            padding: 0px;
+            margin: 0px;
+        }
+        .col {
+            padding: 0px;
+            margin: 0px;
+            align-content: center;
+        }
+        .card {
+            text-align: center;
+            margin: 0px 0px;
+            & img {
+                margin: 0px;
+            }
+    
+        }
+    }
     
     .difusores__aromas2 {
         display: flex;
